@@ -1,0 +1,18 @@
+/* Dry Principle */
+/* meaning do not repeaat yourself */
+
+:root {
+  --brand-color: #3f51b5;
+}
+
+.section {
+  /* Other styles */
+  border: 2px solid var(--brand-color, brown);
+}
+
+.section-title {
+  /* Other styles */
+  color: var(--brand-color, brown);
+
+  --brand-color: pink;
+}

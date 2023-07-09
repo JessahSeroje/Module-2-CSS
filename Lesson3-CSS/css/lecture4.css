@@ -1,0 +1,58 @@
+/* Rank 4 Elements */
+p {
+  color: red;
+}
+/* color: red !important; */
+/* if may !important mawawala ang bisa ng element, so ang !important is not really adviceable or important */
+
+/* Rank 3 Classes */
+.pink {
+  color: pink;
+}
+
+/* Rank 2 ID */
+#orange {
+  color: orange;
+}
+
+/* Rank 1 Inline Styles */
+/* <-- check the ranking style in html */
+
+/* How to Avoid Specificity */
+/* 1. Using child and descendant selectors */
+.post > h1 {
+  /* styles here */
+}
+.post > p {
+  /* styles here */
+}
+.post > a {
+  /* styles here */
+}
+/* 2.adding descriptive classes on parent and child tags */
+.post {
+  /* styles here */
+}
+.post > .title {
+  /* styles here */
+}
+.post > .text {
+  /* styles here */
+}
+.post > .link {
+  /* styles here */
+}
+
+/* 3. parent name and child name */
+.post {
+  /* styles here */
+}
+.post > .post-title {
+  /* styles here */
+}
+.post > .post-text {
+  /* styles here */
+}
+.post > .post-link {
+  /* styles here */
+}

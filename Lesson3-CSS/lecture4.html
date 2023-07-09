@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 4 (Cascading - Specificity</title>
+    <link rel="stylesheet" href="./css/lecture4.css" />
+  </head>
+  <body>
+    <p class="pink" id="orange" style="color: magenta">Hello World</p>
+    <!-- How to Avoid Specificity -->
+    <!-- 1. Using child and descendant selectors-->
+    <article class="post">
+      <h1>How to Avoid Specificity</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+        voluptatem?
+      </p>
+      <a href="">Read more...</a>
+    </article>
+
+    <!-- 2. Adding descriptive classes on parent and child tags -->
+    <article class="post">
+      <h1 class="title">
+        By adding descriptive classes on parent and child tags
+      </h1>
+      <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+        voluptatem?
+      </p>
+      <a class="link" href="">Read more...</a>
+    </article>
+
+    <!-- 3. Parent name & Child name -->
+    <article class="post">
+      <h1 class="post-title">Parent name & Child name</h1>
+      <p class="post-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+        voluptatem?
+      </p>
+      <a class="post-link" href="">Read more...</a>
+    </article>
+  </body>
+</html>

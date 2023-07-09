@@ -1,0 +1,12 @@
+.post {
+  color: brown;
+}
+
+/* manually inherit anchor tags */
+.post-link {
+  color: inherit;
+}
+
+body {
+  color: fuchsia;
+}
