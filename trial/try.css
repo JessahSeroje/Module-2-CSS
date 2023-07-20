@@ -1,13 +1,33 @@
-body {
-  font-family: sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #212121;
+  background-color: #f9f9fd;
+  
+}
+
+.title {
+    text-decoration: underline;
+    color: darkslateblue;
+}
+.article {
+        font-size: small;
+        color: darkmagenta;
+}
+/* <! Box Model (Content, Padding, Border and Margin) --> */
 .text {
   border: 5px dashed #2196f3;
   padding: 15px;
   margin: 20px;
 }
-.box {
+/* <!-- Box (Width & Height Properties) --> */
+.box-one {
   width: 150px;
   height: 150px;
 
@@ -15,4 +35,316 @@ body {
   padding: 30px;
   margin: 40px;
   background-color: #ffeb3b;
+  
 }
+
+
+/* Box-sizing property */
+/* content-box value */
+/* border-box value */
+/* Global border-box */
+ 
+/* <p> By using the * generic selector, you can set the border-box value for all elements and pseudo-elements </p> */
+/* Remaining code */
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.text-second {
+    padding: 20px;
+    background-color: #fff;
+    border: 2px dashed #212121;
+}
+
+  /* margin property */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.post {
+    padding: 20px;
+
+    max-width: 400px;
+    background-color: mistyrose;
+    border: 2px dashed #2a2a2a;
+}
+
+.post-thumb {
+    margin-bottom: 30px;
+    border: 2px dashed tomato;
+}
+
+.post-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    border: 2px dashed teal;
+}
+.post-text {
+    margin-bottom: 0;
+    margin-top: 0;
+
+    border: 2px dashed blue;
+}
+
+  /* Vertical margine collapse */
+.margin {
+    width: 200px;
+    height: 100px;
+}
+
+.top {
+    margin-bottom: 20px;
+    background-color: teal;
+}
+
+.bottom {
+    margin-top: 40px;
+    background-color: palevioletred;
+}
+
+  /* Vertical margins falling outside parents */
+.outer-box {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+}
+
+.inner-box {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    background-color: palevioletred;
+}
+
+  /* border property */
+.box-two {
+    width: 100px;
+    height: 100px;
+    border: 5px solid tomato;
+
+    text-align: center;
+    font-weight: 800;
+}
+
+  /* Individual borders */
+.box-three {
+    text-align: center;
+    font-weight: 900;
+    font-size: xx-large;
+    width: 150px;
+    height: 150px;
+
+    /* Sets top border styles */
+    border-top-width: 13px;
+    border-top-style: solid;
+    border-top-color: blue;
+
+    /* Sets right border styles */
+    border-right-width: 15px;
+    border-right-style: dotted;
+    border-right-color: black;
+
+    /* Sets bottom border styles */
+    border-bottom-width: 17px;
+    border-bottom-style: dashed;
+    border-bottom-color: palevioletred;
+
+    /* Sets left border styles */
+    border-left-width: 19px;
+    border-left-style: dashed;
+    border-left-color: green;
+}
+
+  /* Rounded border */
+/* body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+.box-A {
+    width: 140px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #f44336;
+    text-align: center;
+    
+}
+
+.box-B {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color: #2196f3;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.box-C {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+
+  /* ELEMENT TYPES */
+  /* block-level elements */
+.box-four {
+    width: 240px;
+    height: 80px;
+    /* Centering block-level elements horizontally */
+    width: 300px;
+    background-color: tomato;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+.indigo {
+    background-color: #3f51b5;
+}
+
+.green {
+    background-color: #4caf50;
+}
+
+.amber {
+    background-color: #ffc107;
+
+    /* fixed-width */
+}
+.parent {
+    background-color: #3f51b5;
+  }
+  
+  .child {
+    max-width: 220px;
+    margin: 0 auto;
+    background-color: #4caf50;
+    text-align: center;
+  }
+  
+  .parent,
+  .child {
+    padding: 20px;
+    border-radius: 4px;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 20px;
+    }
+  
+    /* container element */
+    .container {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 0 15px;
+      
+        border: 2px dashed #2a2a2a;
+        }
+    
+        /* other styles for individual section */
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.containerB {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+  outline: 2px dashed #f44336;
+}
+
+.page-header,
+.page-footer,
+.hero,
+.about,
+.features {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-header {
+  background-color: #e0e0e0;
+}
+
+.hero {
+  background-color: #4caf50;
+}
+
+.about {
+  background-color: #ffc107;
+}
+
+.features {
+  background-color: #2196f3;
+}
+
+.page-footer {
+  background-color: #90a4ae;
+}
+
+/* INLINE ELEMENTS */
+ /* example */
+ /* --Span is an inline element. Let's set it various geometry and see what happens.-- */
+ .link {
+    background-color: tomato;
+    color: white;
+  
+    /* ✅It works */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  
+    /* ❌ No effect */
+    width: 1000px;
+    height: 1000px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  /* Gaps between inline elements */
+  .card {
+    max-width: 320px;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #f44336;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card-image {
+    max-width: 100%;
+  }
+  
+  .card-image.no-gap {
+    display: block;
+  }
+  
+  .card-heading {
+    margin: 0;
+    padding: 20px;
+    font-weight: 500;
+    background-color: #03a9f4;
+  }
+  
+    .card + .card {
+    margin-top: 20px;
+  }
+

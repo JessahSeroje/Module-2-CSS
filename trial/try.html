@@ -4,14 +4,183 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+      <!-- Normalizer first -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+/>
+    <!-- Your styles next -->
     <link rel="stylesheet" href="./try.css" />
   </head>
+
   <body>
+    <h2 class="Lesson">BOX MODEL</h2>
+    <h3 class="title">Content, Padding, Border and Margin</h3>
+        <!-- Box Model (Content, Padding, Border and Margin) -->
     <p class="text">
       This is the content of an element, such as text, image, video, or nested
       elements. By default, the height of the content area is determined by the
       content, and the width is determined by the element type.
     </p>
-    <div class="box"></div>
-  </body>
+
+    <!-- Box (Width & Height Properties) -->
+    <h3 class="title">Box (Width & Height Properties)</h3>
+    <div class="box-one"></div>
+
+    <!-- Box-sizing property -->
+    <!-- Formulas for calculating the final box width and height with a content-box value.
+
+Width = width + padding-left + padding-right + border-left + border-right
+
+Height = height + padding-top + padding-bottom + border-top + border-bottom -->
+
+
+
+<!-- ELEMENT GEOMETRY -->
+<h2 class="Lesson">ELEMENT GEOMETRY</h2>
+<!-- padding property -->
+<h3 class="title">Padding Property</h3>
+<p class="text-second">Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis laborum odio voluptatem repellat eaque voluptatum quos neque optio, perspiciatis aperiam error odit praesentium consequatur totam maiores. Minus similique molestias, eveniet delectus eaque dignissimos! Id deserunt magni doloremque, corrupti consectetur vero!</p>
+
+
+<!-- margin property -->
+<h3 class="title">Margin property</h3>
+<article class="post">
+    <div class="post-thumb">
+      <img class="post-image" src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" alt="Tabby cat in a funny sitting position">
+    </div>
+    <h1 class="post-heading">All about cats</h1>
+    <p class="post-text">Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis laborum odio voluptatem repellat eaque voluptatum quos neque optio, perspiciatis aperiam error odit praesentium consequatur totam maiores. Minus similique molestias, eveniet delectus eaque dignissimos! Id deserunt magni doloremque, corrupti consectetur vero veniam!</p>
+  </article>
+  <br /><br /><br />
+
+  <!-- Vertical margin collapse -->
+<h3 class="title">vertical margin collapse</h3>
+  <div class="margin top"></div>
+<div class="margin bottom"></div>
+
+<!-- Vertical margins falling outside parents -->
+<h3 class="title">Vertical margins falling outside parents</h3>
+<div class="outer-box">
+    <div class="inner-box"></div>
+  </div>
+
+  <!-- border property -->
+  <h3 class="title">border property</h3>
+<div class="box-two">BOX2<br />border</div>
+
+<!-- Individual Borders -->
+<h3 class="title">Individual Borders</h3>
+  <div class="box-three">BOX3</div>
+
+  <!-- Rounded border -->
+  <h3 class="title">Rounded Border</h3>
+<div class="box-A">BOX A</div>
+<div class="box-B">BOX B</div>
+<div class="box-C">BOX C</div>
+<br /><br />
+
+<!--Element Types  -->
+<h2 class="Lesson">ELEMENT TYPES
+    <article class="article">Block vs Inline</article></h2>
+<!-- block-level elements -->
+<h3 class="title">Block-Level Elements</h3>
+
+<!-- fixed-width -->
+<div class="box-four indigo"></div>
+<div class="box-four green"></div>
+<div class="box-four amber"></div>
+<br />
+<h4>fixed-width</h4>
+
+<div class="parent">
+    <p>Parent element</p>
+    <div class="child">Fixed width block-level child element</div>
+  </div>
+
+  <br />
+  <!-- container element -->
+  <h3 class="title">Container Element</h3>
+  <article class="article">(wrapping the entire content of a web page)</article>
+  <div class="container">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quod quo tenetur quia expedita laboriosam at doloribus molestiae illum, modi minus qui sunt odio iste commodi nisi dicta distinctio esse. Quae beatae nam ullam earum velit illum voluptate nesciunt consectetur! Quam fuga labore dicta iusto tenetur nesciunt velit iure soluta!</p>
+  
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim eum quas quia nam fugit quibusdam esse amet et! Nam et quo nisi commodi dolor, deserunt vero deleniti vel ducimus praesentium aliquid odio fugit accusantium debitis facere eos asperiores eaque quas? Rerum deserunt ipsa veritatis vel totam voluptate repellendus minus sit?</p>
+  
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dicta deserunt hic eos aliquam saepe quo facere, corporis assumenda, ratione debitis suscipit. Dignissimos exercitationem error amet, facilis a velit excepturi neque ut nostrum odio ad, vitae ab quo. Velit aspernatur facere, magni cum fuga harum facilis numquam. Neque, quae et.</p>
+  </div>
+<br />
+  <!-- another set -->
+  <article class="article">(conveniently set different full-sized backgrounds and other styles for individual page sections)</article>
+  <header class="page-header">
+    <div class="containerB">
+      <p>Page header</p>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="containerB">
+        <h1>Hero section with CTA button etc.</h1>
+      </div>
+    </section>
+  
+    <section class="about">
+      <div class="containerB">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dignissimos debitis ipsum minus recusandae saepe voluptatem sunt neque eaque ad, facilis consequatur porro excepturi, nulla corrupti consequuntur voluptates? Consectetur expedita eaque voluptate inventore possimus sit. Nesciunt commodi ut vitae at similique vero harum amet eos? Sit adipisci deserunt nam libero?</p>
+      </div>
+    </section>
+  
+    <section class="features">
+      <div class="containerB">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dignissimos debitis ipsum minus recusandae saepe voluptatem sunt neque eaque ad, facilis consequatur porro excepturi, nulla corrupti consequuntur voluptates? Consectetur expedita eaque voluptate inventore possimus sit. Nesciunt commodi ut vitae at similique vero harum amet eos? Sit adipisci deserunt nam libero?</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="page-footer">
+    <div class="containerB">
+      <p>Page footer</p>
+    </div>
+  </footer>
+  <br />
+
+  <!-- INLINE ELEMENTS -->
+  <h3 class="title">Inline Element</h3>
+  <p>They are positioned on one line, one after another, until there is enough space on it, and when the line ends, they jump to the next line and fill it in.</p>
+  <ul class="description" style="color: deeppink;">They
+    <li>have display: inline</li>
+    <li>stay on the line as long as there is enough space on it</li>
+    <li>can only be set horizontal geometry: left and right paddings, margins and borders.</li>
+    <li>ignore the top and bottom margin, padding and border values</li>
+    <li>the width and height properties have no effect</li>
+  </ul>
+  <p class="sample" style="color: darkorchid; font-style: italic;"><span style="background-color: burlywood;">Span</span> is an inline element. Let's set it various geometry and see what happens.</p>
+<p>example:</p>
+<a class="link" href="">Link</a>
+<a class="link" href="">Link</a>
+<a class="link" href="">Link</a>
+<br/>
+<br/>
+
+<!-- Gaps between Inline Element -->
+<h3 class="title">Gaps between inline elements</h3>
+
+<div class="card">
+    <img class="card-image" src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=320" alt="A cat">
+    <h2 class="card-heading">Card title 1</h2>
+  </div>
+  
+  <div class="card">
+    <img class="card-image no-gap" src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=320" alt="A cat">
+    <h2 class="card-heading">Card title 2</h2>
+  </div>
+
+
+</body>
 </html>
