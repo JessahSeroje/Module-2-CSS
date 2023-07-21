@@ -1,0 +1,56 @@
+/* Default: content-box width and height properties do not set the overall size of an element, but onlu the height and width of its content. */
+
+/* Width = width + padding-left + padding-right + border-left + border-right
+
+Height = height + padding-top + padding-bottom + border-top + border-bottom -->
+ */
+/* width = 150+30+30+5+5 */
+/* height = 150+30+30+5+5 */
+/* width = 220 */
+/* height = 220 */
+
+/* (*) - is a universal selector on all your documents */
+
+/* * {
+    box-sizing: border-box;
+} */
+
+/* CONTENT-BOX */
+.box1 {
+  width: 150px;
+  height: 150px;
+
+  border: 5px inset #f44336;
+  padding: 30px;
+  margin: 40px;
+  background-color: #ffeb3b;
+  /* box-sizing: content-box; */
+  /* there are 2 kinds of box-sizing : content-box & border-box */
+}
+/* BORDER-BOX - standard box model */
+/* the width and height properties set the final dimensions of the element */
+/* the width and height will decreased in the live inspect because the number of the width and height is already the width and height computation for the over all dimension */
+/* width: 150 = 80+30+30+5+5     height: 200 = 130+30+30+5+5*/
+
+.box2 {
+  width: 150px;
+  height: 200px;
+
+  border: 5px inset #f44336;
+  padding: 30px;
+  margin: 40px;
+  background-color: #ffeb3b;
+  box-sizing: border-box;
+}
+/* when to use content box and border-box? answer: basically we dont use CONTENT-BOX because its a bad practise.  */
+
+.box3 {
+  width: 300px;
+  height: 300px;
+
+  border: 5px inset #f44336;
+  padding: 30px;
+  margin: 40px;
+  background-color: #ffeb3b;
+  box-sizing: border-box;
+}
