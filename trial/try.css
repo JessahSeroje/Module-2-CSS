@@ -304,6 +304,7 @@ p {
  .link {
     background-color: tomato;
     color: white;
+    
   
     /* ✅It works */
     padding-left: 20px;
@@ -348,3 +349,41 @@ p {
     margin-top: 20px;
   }
 
+  /* Features of vertical paddings and borders */
+
+  .text {
+    background-color: tomato;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 10px solid #2196f3;
+    border-right: 10px solid #2196f3;
+  
+    /* Let's give the inline <span> element the top
+        and bottom margins, and borders that don't work.   */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: 10px solid #2196f3;
+    border-bottom: 10px solid #2196f3;
+  }
+  
+    p {
+    border: 5px solid #212121;
+  }
+
+/* Inline-block elements */
+
+.links {
+    display: inline-block;
+    padding: 16px 32px;
+  
+    border-radius: 3px;
+    background-color: teal;
+    color: white;
+  
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
