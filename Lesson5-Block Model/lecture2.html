@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 2 (Margin, Padding)</title>
+
+    <!-- CSS Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/lecture2.css" />
+  </head>
+  <body>
+    <article class="post">
+      <div class="post-thumb">
+        <img
+          class="post-image"
+          src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+          alt="Tabby cat in a funny sitting position"
+        />
+      </div>
+      <h1 class="post-heading">All about cats</h1>
+      <p class="post-text">Ang matabang pusa na nakaupo.</p>
+    </article>
+
+    <!-- Vertical Margin Collapse -->
+    <h3 class="title">vertical margin collapse</h3>
+    <div class="box top"></div>
+    <div class="box bottom"></div>
+
+    <!-- Vertical margins of a nested box - HIgher within parent and child -->
+    <h3 class="title">Vertical margins of a nested box</h3>
+    <div>
+      <div class="outer-box">
+      <div class="inner-box"></div>
+    </div>
+  </body>
+</html>
