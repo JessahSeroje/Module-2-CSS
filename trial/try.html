@@ -205,6 +205,7 @@ Height = height + padding-top + padding-bottom + border-top + border-bottom -->
     <br />
 
     <!-- INLINE ELEMENTS -->
+    <section>
     <h3 class="title">Inline Element</h3>
     <p>
       They are positioned on one line, one after another, until there is enough
@@ -232,8 +233,10 @@ Height = height + padding-top + padding-bottom + border-top + border-bottom -->
     <a class="link" href="">Link</a>
     <br />
     <br />
+    </section>
 
     <!-- Gaps between Inline Element -->
+    <section>
     <h3 class="title">Gaps between inline elements</h3>
     <div class="card">
       <img
@@ -254,8 +257,31 @@ Height = height + padding-top + padding-bottom + border-top + border-bottom -->
     </div>
     <br />
     <br />
+    </section>
+<!-- practise ko lang -->
+<section class="section">
+    <div class="containers">
+      <ul class="connects list">
+        <li class="connect">
+        <button class="click" type="button">Subscribe</button>
+        </li>
+        <li class="connect">
+        <button class="click" type="button">Login</button>
+        </li>
+        <li class="connect">
+        <button class="click" type="button">Share</button>
+        </li>
+        <li class="connect">
+        <button class="click" type="button">Download</button>
+        </li>
+      </ul>
+    </div>
+</section>
+<br />
+
 
     <!-- Features of vertical paddings and borders -->
+    <section>
     <h4>FEATURES OF VERTICAL PADDINGS AND BORDER</h4>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quaerat
@@ -274,15 +300,19 @@ Height = height + padding-top + padding-bottom + border-top + border-bottom -->
       facilis saepe quo et architecto voluptatem blanditiis.
     </p>
     <br /><br />
+    </section>
 
     <!-- Inline-block elements -->
+    <section>
     <h4>INLINE-BLOCK ELEMENTS</h4>
     <a href="" class="links">Learn more</a>
     <a href="" class="links">Learn more</a>
     <a href="" class="links">Learn more</a>
     <br /><br />
+    </section>
 
     <!-- Hiding Elements -->
+    <section>
     <h4>HIDING ELEMENTS</h4>
     <div class="tabs">
       <div class="controls">...</div>
@@ -292,8 +322,10 @@ Height = height + padding-top + padding-bottom + border-top + border-bottom -->
       <div class="pane">3 - HIdden words.</div>
     </div>
 <br />
+</section>
 
 <!-- check try3.html -->
+<section>
     <article>another sample:</article>
     <br />
     <div class="tabs">
@@ -302,7 +334,6 @@ Height = height + padding-top + padding-bottom + border-top + border-bottom -->
     <button data-id="pane-2">Second cat</button>
     <button data-id="pane-3">Third cat</button>
   </div>
-
   <div id="pane-1" class="pane is-active">
     <img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg" width="320" alt="">
     <p><b>1</b> - ito lang ang makikita</p>
@@ -315,29 +346,172 @@ Height = height + padding-top + padding-bottom + border-top + border-bottom -->
     <img src="https://cdn.pixabay.com/photo/2020/10/01/11/41/cat-5618328_1280.jpg" width="320" alt="">
     <p><b>3</b> - Ito din itatago.</p>
   </div>
+  </section>
 
   <!-- STRUCTURAL PSEUDO CLASSES -->
+  <section>
   <h4>STRUCTURAL PSEUDO CLASSES</h4>
   <ul class="list">
-  <li class="list-item">
+  <li class="list-itemm">
     <a class="list-link">Link 1</a>
   </li>
-  <li class="list-item">
+  <li class="list-itemm">
     <a class="list-link">Link 2</a>
   </li>
-  <li class="list-item">
+  <li class="list-itemm">
     <a class="list-link">Link 3</a>
   </li>
 </ul>
+</section>
 
 
-<h4><span style="background-color: darkorange;">:first-child and  :last-child Pseudo</span> </h4>
 <!-- :first-child and :last-child pseudo-classes -->
+<section>
+<h4><span style="background-color: darkorange;">:first-child and  :last-child Pseudo</span> </h4>
 <ul class="lists">
   <li class="lists-items">HTML</li>
   <li class="lists-items">CSS</li>
   <li class="lists-items">JavaScript</li>
   <li class="lists-items">React</li>
 </ul>
+</section>
+
+<!-- :nth-child (an+b) pseudo-class -->
+<section>
+<h4><span style="background-color: rgb(250, 130, 214);"><button class="nt" type="button" style="background-color: rgb(250, 130, 214);">:nth-child (an+b)</span></button> pseudo-class</h4>
+
+<ul class="list">
+  <li class="list-item">1</li>
+  <li class="list-item">2</li>
+  <li class="list-item">3</li>
+  <li class="list-item">4</li>
+  <li class="list-item">5</li>
+  <li class="list-item">6</li>
+  <li class="list-item">7</li>
+  <li class="list-item">8</li>
+  <li class="list-item">9</li>
+  <li class="list-item">10</li>
+</ul>
+</section>
+
+<section>
+<!-- :nth-last-child(an+b) pseudo-class -->
+<h4><span style="background-color: rgb(250, 130, 214);"><button class="nt" type="button" style="background-color: rgb(250, 130, 214);">:nth-last-child (an+b)</span></button> pseudo-class</h4>
+<p>sample effect above</p>
+<!-- Nth element -->
+<br />
+<!-- <p>Additional pseudo-classes
+These pseudo-classes are used in very infrequent or very specific cases.
+
+:first-of-type selects the first selector of a given type.
+:last-of-type selects the last selector of a given type.
+:only-of-type selects an element that is the only child of this type in the collection of siblings.
+:nth-of-type(an+b) selects the selector number given in brackets using the an+b formula.
+:nth-last-of-type(an+b) is similar to :nth-of-type() but counts from the end of the collection (the last element).
+:only-child selects an element that is the only child with such a selector in the collection of siblings.
+:empty selects empty elements, i.e. without descendants or text.</p> -->
+</section>
+
+<!-- display property -->
+<section>
+  <h4><button class="nt" type="button" style="background-color: rgb(247, 151, 9);">display</button> property</h4>
+
+  <ul class="menu">
+  <li class="item"><a href="" class="linka">Homepage</a></li>
+  <li class="item"><a href="" class="linka">Blog</a></li>
+  <li class="item"><a href="" class="linka">Podcasts</a></li>
+  <li class="item"><a href="" class="linka">Contacts</a></li>
+</ul>
+</section>
+
+<!-- flex-direction property -->
+<section>
+  
+  <h4><button class="nt" type="button" style="background-color: rgb(247, 151, 9);">flex-direction</button> property</h4>
+
+  <ul class="menu">
+  <li class="item"><a href="" class="linkb">Home page</a></li>
+  <li class="item"><a href="" class="linkb">Blog</a></li>
+  <li class="item"><a href="" class="linkb">Podcasts</a></li>
+  <li class="item"><a href="" class="linkb">Contacts</a></li>
+</ul>
+
+<ul class="menu reversed">
+  <li class="item"><a href="" class="linkb">Home page</a></li>
+  <li class="item"><a href="" class="linkb">Blog</a></li>
+  <li class="item"><a href="" class="linkb">Podcasts</a></li>
+  <li class="item"><a href="" class="linkb">Contacts</a></li>
+</ul>
+</div>
+</section>
+
+<!-- justify-content property -->
+<section>
+  <div class="justifycontent">
+  <h4><button class="nt" type="button" style="background-color: rgb(247, 151, 9);">justify-content</button> property</h4>
+
+  <code>justify-content: flex-start</code>
+<ul class="menu">
+  <li class="item"><a href="" class="linkc">Home page</a></li>
+  <li class="item"><a href="" class="linkc">Blog</a></li>
+  <li class="item"><a href="" class="linkc">Podcasts</a></li>
+  <li class="item"><a href="" class="linkc">Contacts</a></li>
+</ul>
+
+<code>justify-content: flex-end</code>
+<ul class="menu flex-end">
+  <li class="item"><a href="" class="linkc">Home page</a></li>
+  <li class="item"><a href="" class="linkc">Blog</a></li>
+  <li class="item"><a href="" class="linkc">Podcasts</a></li>
+  <li class="item"><a href="" class="linkc">Contacts</a></li>
+</ul>
+
+<code>justify-content: center</code>
+<ul class="menu center">
+  <li class="item"><a href="" class="linkc">Home page</a></li>
+  <li class="item"><a href="" class="linkc">Blog</a></li>
+  <li class="item"><a href="" class="linkc">Podcasts</a></li>
+  <li class="item"><a href="" class="linkc">Contacts</a></li>
+</ul>
+
+<code>justify-content: space-between</code>
+<ul class="menu space-between">
+  <li class="item"><a href="" class="linkc">Home page</a></li>
+  <li class="item"><a href="" class="linkc">Blog</a></li>
+  <li class="item"><a href="" class="linkc">Podcasts</a></li>
+  <li class="item"><a href="" class="linkc">Contacts</a></li>
+</ul>
+</div>
+  </section>
+
+  <!-- align-items property -->
+  <section>
+    <div class="alignitems">
+  <h4><button class="nt" type="button" style="background-color: rgb(247, 151, 9);">align-items</button> property</h4>
+
+  <header class="page-headerD">
+  <a href="" class="logod">Logo</a>
+
+  <ul class="menud">
+    <li class="itemd"><a href="" class="linkd">Homepage</a></li>
+    <li class="itemd"><a href="" class="linkd">Blog</a></li>
+    <li class="itemd"><a href="" class="linkd">Podcasts</a></li>
+    <li class="itemd"><a href="" class="linkd">Contacts</a></li>
+  </ul>
+</header>
+
+<h3>Image card</h3>
+<div class="cardd">
+  <img src="https://images.pexels.com/photos/952724/pexels-photo-952724.jpeg?auto=compress&cs=tinysrgb&w=240&dpr=2" alt="" width="240">
+  <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eaque odio voluptatibus assumenda reprehenderit? Nisi quibusdam nihil cum ipsam debitis alias at tempora omnis, recusandae tempore facilis, corrupti modi ducimus ullam natus amet, beatae inventore nulla deserunt aspernatur. Expedita, laudantium perspiciatis autem veniam quae est eveniet pariatur in quam repellendus magnam dolor laborum nulla culpa sunt aspernatur eius quidem?</div>
+</div>
+
+<div class="cardd flex-start-aligned">
+  <img src="https://images.pexels.com/photos/952724/pexels-photo-952724.jpeg?auto=compress&cs=tinysrgb&w=240&dpr=2" alt="" width="240">
+  <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eaque odio voluptatibus assumenda reprehenderit? Nisi quibusdam nihil cum ipsam debitis alias at tempora omnis, recusandae tempore facilis, corrupti modi ducimus ullam natus amet, beatae inventore nulla deserunt aspernatur. Expedita, laudantium perspiciatis autem veniam quae est eveniet pariatur in quam repellendus magnam dolor laborum nulla culpa sunt aspernatur eius quidem?</div>
+</div>
+
+</div>
+  </section>
   </body>
 </html>

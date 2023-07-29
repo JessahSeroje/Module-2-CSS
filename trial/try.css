@@ -342,6 +342,33 @@ p {
   margin-top: 20px;
 }
 
+/* practise ko lang */
+.containers {
+  background-color: #eff2fa;
+  padding: 10px;
+  margin: 10px 20px;
+}
+.list .connect {
+  list-style: none;
+  padding: 3px;
+  display: inline;
+  /* width: 20px; */
+}
+.click {
+  border-radius: 3px;
+  border-color: dimgrey;
+  border-width: 1px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 10px 10px;
+  cursor: zoom-in;
+}
+.click:hover {
+  color: rgb(54, 250, 191);
+  background-color: hotpink;
+}
+
 /* Features of vertical paddings and borders */
 
 .text {
@@ -425,14 +452,14 @@ body {
 /* # ✅ Works,
 as
   .list-item is a collection of siblings sharing a parent */
-.list-item:structural pseudo-class {
+.list-itemm:structural pseudo-class {
 }
 
 /* # ❌ Does not work,
 as .list-link is not a collection of siblings,
 they do not share the same parent  */
-.list-link:structural pseudo-class {
-}
+/* .list-link:structural pseudo-class {
+} */
 
 /* :first-child and :last-child pseudo-classes */
 .lists-items {
@@ -446,3 +473,258 @@ they do not share the same parent  */
 .lists-items:first-child {
   margin-top: 0;
 }
+
+/* :nth-child (an+b) pseudo-class */
+.nt {
+  border-radius: 4px;
+  font-weight: 600;
+}
+/* .list-item:nth-child(5) {
+  background-color: orange;
+} */
+
+/* Even and odd elements */
+/* .list-item:nth-child(2n) {
+  background-color: orange;
+} */
+
+/* The same with the alias */
+/* .list-item:nth-child(even) {
+  background-color: orange;
+} */
+
+/* From Nth element */
+/* .list-item:nth-child(n + 6) {
+  background-color: orange;
+} */
+
+/* Up to Nth element */
+/* .list-item:nth-child(-n + 6) {
+  background-color: orange;
+} */
+
+/* Every Nth element */
+/* .list-item:nth-child(3n + 1) {
+  background-color: orange;
+} */
+
+/* Nth element */
+/* .list-item:nth-last-child(3) {
+  background-color: orange;
+} */
+
+/* Up to Nth element */
+/* .list-item:nth-last-child(-n + 3) {
+  background-color: orange;
+} */
+
+/* Additional pseudo-classes */
+/* .list-item:first-of-type {
+  background-color: orange;
+} */
+/* .list-item:last-of-type {
+  background-color: orange;
+} */
+/* .list-item:only-of-type {
+  background-color: orange;
+} */
+/* .list-item:nth-of-type(an + b) {
+  background-color: orange;
+} */
+/* .list-item:nth-last-of-type(an + b) {
+  background-color: orange;
+} */
+/* .list-item:only-child {
+  background-color: orange;
+} */
+/* .list-item:empty {
+  background-color: orange;
+} */
+
+/* display property */
+
+.menu {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  /*  Making ul.menu a Flex container  */
+  display: flex;
+}
+
+.menu .linka {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+
+.menu .linka:hover {
+  text-decoration: underline;
+}
+
+/* flex-direction property */
+.menu {
+  display: flex;
+  gap: 8px;
+
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.menu.reversed {
+  /*  We rotate the main axis from right to left  */
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+.menu .linkb {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+
+.menu .link:hover {
+  text-decoration: underline;
+}
+
+/* justify-content property */
+.justifycontent {
+  background-color: #c7eef0;
+  padding: 1px;
+  margin px;
+}
+code {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 8px;
+  padding: 15px;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.menu.flex-end {
+  justify-content: flex-end;
+}
+
+.menu.center {
+  justify-content: center;
+}
+
+.menu.space-between {
+  justify-content: space-between;
+}
+
+.menu .linkc {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+
+.menu .linkc:hover {
+  text-decoration: underline;
+}
+
+/* align-items property */
+.alignitems {
+  background-color: rgb(252, 222, 226);
+}
+.page-headerD {
+  /*  Making header.page-header a Flex-container and aligning elements  */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #607d8b;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.logod {
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #ff5722;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menud {
+  display: flex;
+  gap: 8px;
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+}
+
+.menud .linkd {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+
+.menud .linkd:hover,
+.menud .linkd:focus,
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+}
+/* image card */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.cardd {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.cardd.flex-start-aligned {
+  align-items: flex-start;
+}
+
+.cardd + .cardd {
+  margin-top: 20px;
+}
+
+
